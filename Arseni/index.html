@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+
+    <title>Portfolio</title>
+</head>
+
+<body>
+
+    <nav>
+        <h1>Арсений Корбуш</h1>
+        <ul class="navigation">
+            <li><a href="#about" class="nav-link">Обо мне</a></li>
+            <li><a href="#skills" class="nav-link">Навыки</a></li>
+            <li><a href="#projects" class="nav-link">Проекты</a></li>
+            <li><a href="#contact" class="nav-link">Контакты</a></li>
+        </ul>
+        <button class="burger-menu" id="burger-menu">
+            <ion-icon class="bars" name="menu-outline"></ion-icon>
+        </button>
+    </nav>
+
+
+    <section class="person" id="about">
+        <img src="assets/images/photo_2022-12-26_16-25-21 (1).webp" alt="картинка" loading="lazy" class="person-img" />
+        <div class="bio animate__animated animate__shakeX">
+            <h2 class="bio-title">Обо мне</h2>
+            <p class="bio-text">
+                Занимаюсь программированием, идёт 6 месяц, работал с разными фреймворками и библиотеками, обладаю
+                огромным рвением покорять новые азы в этой нише. Хочу получить оффер в зарубежной компании на
+                Senior-FrontEnd-dev к 20 годам!
+            </p>
+        </div>
+    </section>
+
+    <section class="more-about">
+        <h2>Дополнительная информация обо мне</h2>
+        <p>
+            Сеня, 17 лет, в свободное время читаю бизнес литературу и пытаюсь быть всесторонне развитым. По истечению
+            обстоятельств редко играю в игры)
+        </p>
+        <p>
+            Четко продемонстрированная компетентность в фронт разработке, последующую жизнь хочу связать с iT,
+            хочу заняться авторством отличных программ и т.п.
+            Готов быстро достичь высокого уровня в WEB и английском языке.
+            Амбициозный, умный, аналитический, хочу нести
+            ответственность за выполнение разного рода задач. Структурированный подход к работе.
+
+        </p>
+        <p>
+
+        </p>
+    </section>
+
+    <section class="skills" id="skills">
+        <h3 class="skills-header switch-color">Мои навыки</h3>
+        <div class="skills-wrapper">
+            <div class="skills-set">
+                <img src="assets/icons/icons8-html-5.svg" alt="иконка" loading="lazy" class="icon icon-card" />
+                <img src="assets/icons/icons8-css3.svg" alt="иконка" loading="lazy" class="icon icon-card" />
+                <img src="assets/icons/icons8-javascript.svg" alt="иконка" loading="lazy" class="icon icon-card" />
+
+            </div>
+            <div class="skills-set">
+                <img src="assets/icons/icons8-bootstrap.svg" alt="иконка" loading="lazy" class="icon icon-card" />
+                <img src="assets/icons/icons8-react-native.svg" alt="иконка" loading="lazy" class="icon icon-card" />
+                <img src="assets/icons/icons8-git.svg" alt="иконка" loading="lazy" class="icon icon-card" />
+
+            </div>
+        </div>
+    </section>
+
+    <section class="project-section">
+        <h1 class="center">Мои проекты</h1>
+        <div class="projects">
+
+        <div class="slideshow-container">
+
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="assets/images/BuilDX2.webp" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="assets/images/Ms.webp" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="assets/images/Belarus.webp" style="width:100%">
+            </div>
+
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
+</section>
+
+<section class="contact" id="contact">
+    <h4 class="switch-color">Связаться со мной</h4>
+    <div class="contact-form-container">
+        <div class="contact-form">
+            <form action="#" method="post">
+                <div class="form-control">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="send-name" placeholder="Введите свое имя" class="input-field"
+                        required />
+                </div>
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="send-email" placeholder="Введите свою почту"
+                        class="input-field" required />
+                </div>
+                <div class="form-control">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="60" rows="10" placeholder="Введите свое сообщение"
+                        class="input-field" required>
+                        </textarea>
+                </div>
+                <div class="form-control">
+                    <input onclick="myFunction()" type="submit" value="Отправить" id="submit-btn" class="submit-btn" />
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<div class="socials">
+    <a href="https://twitter.com/?lang=en" target="_blank">
+        <img src="assets/icons/icons8-twitter-circled.gif" alt="twitter" loading="lazy" class="socicon" />
+    </a>
+    <a href="https://www.instagram.com/" target="_blank">
+        <img src="assets/icons/icons8-instagram.gif" alt="instagram" loading="lazy" class="socicon" />
+    </a>
+    <a href="https://www.linkedin.com/" target="_blank">
+        <img src="assets/icons/icons8-linkedin-circled.gif" alt="linkedin" loading="lazy" class="socicon" />
+    </a>
+    <a href="https://github.com/" target="_blank">
+        <img src="assets/icons/icons8-github.gif" alt="github" loading="lazy" class="socicon" />
+    </a>
+</div>
+
+<i class="scroll-up" id="scroll-up">
+    <img src="assets/icons/icons8-upward-arrow.gif" class="socicon up-arrow" alt="scroll-up">
+</i>
+
+<footer>
+    <p class="copy">&copy; Copyright 2023</p>
+    <p class="copy">Создал
+        <a href="" target="_blank">Арсений Корбуш</a>
+    </p>
+</footer>
+<script src="assets/js/app.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
